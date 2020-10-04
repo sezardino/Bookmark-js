@@ -1,0 +1,68 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.container {
+  min-width: 311px;
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: $mobileTextFS;
+  line-height: $mobileTextLH;
+  letter-spacing: $mobileTextLS;
+  font-weight: 400;
+  color: $grey;
+}
+
+.title {
+  font-size: $mobileTitleFS;
+  font-weight: 500;
+  color: $main;
+}
+
+@media(min-width: $desktopWidth) {
+  .text {
+    font-size: $desktopTextFS;
+    line-height: $desktopTextLH;
+    letter-spacing: $desktopTextLS;
+  }
+
+  .title {
+    font-size: $desktopTitleFS;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

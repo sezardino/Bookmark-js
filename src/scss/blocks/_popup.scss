@@ -1,0 +1,115 @@
+.popup {
+  padding-top: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($main, 0.9);
+  text-align: left;
+
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 0.2s all;
+
+  &--active {
+    left: 0;
+  }
+
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    margin-top: 65px;
+  }
+
+  &__img {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    z-index: 2;
+  }
+
+  &__close {
+    padding: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    cursor: pointer;
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 90%;
+
+    margin-top: 25px;
+  }
+}
+
+@media(min-width: 576px) {
+  .popup {
+
+    &__container {
+      width: 90%;
+      display: flex;
+      border-radius: 10px;
+    }
+
+    &__img {
+      position: relative;
+      margin: 0 auto;
+      width: 45%;
+      z-index: 2;
+    }
+
+    &__wrapper {
+
+      max-width: 50%;
+    }
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .popup {
+    padding-top: 50px;
+
+    &__container {
+      width: 70%;
+      padding-top: 60px;
+      padding-bottom: 120px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      border-radius: 10px;
+    }
+
+    &__wrapper {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: flex-end;
+    }
+
+    &__img {
+      width: 40%;
+    }
+
+    &__text {
+      max-width: 455px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.header--active {
+  .logo {
+    &--text {
+      fill: #fff;
+    }
+
+    &--circle {
+      fill: #fff;
+    }
+
+    &--symbol {
+      fill: $main;
+    }
+  }
+}

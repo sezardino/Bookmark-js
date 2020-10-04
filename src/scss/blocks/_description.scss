@@ -1,0 +1,44 @@
+.description {
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: $mobileTitleFS;
+    font-weight: 500;
+    color: $main;
+  }
+
+  &__text {
+    margin-top: 30px;
+  }
+
+  &__buttons {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .description {
+    text-align: left;
+    max-width: 490px;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__text {
+      margin-top: 30px;
+    }
+
+    &__buttons {
+      margin-top: 35px;
+      max-width: 450px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

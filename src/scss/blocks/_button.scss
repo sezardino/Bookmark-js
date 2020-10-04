@@ -1,0 +1,143 @@
+.button {
+  padding: 16px 18px;
+  border: none;
+  background-color: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: $main;
+  font-weight: 500;
+
+  &--blue {
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &--red {
+    background-color: $red;
+    color: #ffffff;
+  }
+
+  &--white {
+    background-color: #F7F7F7;
+    box-shadow: 0 10px 10px rgba($main, 0.1);
+  }
+
+  &--cards {
+    padding: 18px 35px;
+  }
+
+  &--login {
+    width: 80%;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  &--arrow {
+    padding: 5px;
+    box-shadow: none;
+
+    &:hover {
+      stroke: $red;
+    }
+  }
+
+  &--questions {
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--hero {
+    &-google {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .button {
+    padding: 17px 20px;
+    letter-spacing: $mobileTextLS;
+    font-size: 16px;
+
+    &--login {
+      padding: 16px 30px;
+      width: auto;
+      color: #ffffff;
+      background-color: $red;
+      border: none;
+
+      &:hover {
+        padding: 13px 27px;
+        background-color: #ffffff;
+        color: $red;
+        border: 3px solid $red;
+
+      }
+    }
+
+    &--hero {
+      padding: 20px 18px;
+
+      &-fox {
+        &:hover {
+          padding: 17px 15px;
+          background-color: #ffffff;
+          color: $main;
+          border: 3px solid $main;
+        }
+      }
+
+      &-google {
+        &:hover {
+          padding: 17px 15px;
+          background-color: #ffffff;
+          color: $blue;
+          border: 3px solid $blue;
+        }
+      }
+    }
+
+    &--cards {
+      &:hover {
+        padding: 14px 17px;
+        color: $blue;
+        background-color: #ffffff;
+        border: 3px solid $blue;
+      }
+    }
+
+    &--questions {
+      font-size: 19px;
+      padding-left: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    &--form {
+      padding: 17px 23px;
+
+      &:hover {
+        padding: 14px 20px;
+        color: $red;
+        background-color: #ffffff;
+        border: 3px solid $red;
+      }
+    }
+  }
+}
